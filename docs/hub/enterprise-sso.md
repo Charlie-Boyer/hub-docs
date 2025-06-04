@@ -6,6 +6,8 @@ This feature is part of the <a href="https://huggingface.co/enterprise">Enterpri
 
 Single sign-on (SSO) allows organizations to securely manage user authentication through their own identity provider (IdP). Both SAML 2.0 and OpenID Connect (OIDC) protocols are supported.
 
+Please note that SSO on Hugging Face is designed for managing access to organization-specific resources (like private models, datasets, and Spaces) and does not replace the core authentication for the Hugging Face platform itself. Users will still need a Hugging Face account to log in to the platform; SSO then governs their access rights within the organization.
+
 <div class="flex justify-center" style="max-width: 550px">
   <img
     class="block dark:hidden m-0!"
@@ -26,6 +28,10 @@ This feature allows organizations to:
 - Support popular providers like Okta, OneLogin, and Azure Active Directory
 - Maintain security while allowing external collaborators when needed
 - Control session timeouts and role mappings
+
+<Tip>
+User provisioning (e.g., via SCIM) is supported as part of the Enterprise Plus plan. Please contact your Hugging Face account team or [reach out to sales](https://huggingface.co/contact/sales?from=docs-hub-enterprise-sso) for more information.
+</Tip>
 
 This Enterprise Hub feature helps organizations maintain consistent security policies while giving their teams seamless access to Hugging Face resources.
 
